@@ -16,3 +16,17 @@ export type MenuItem = {
   href?: string;
   submenu?: { label: string; href: string }[];
 };
+
+export type ServiceKey = "glovo" | "uber" | "bolt";
+
+export type ServiceProps = {
+  name: string;
+  color: string;
+  text: string;
+  border: string;
+  btn: string;
+};
+
+export interface ServiceRecord extends Record<ServiceKey, ServiceProps> {
+  [key: string]: ServiceProps;
+}

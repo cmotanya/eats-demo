@@ -10,6 +10,7 @@
 
   --error: #e63946;
   --success: #2a9d8f;
+  --whatsapp: #25d366;
 }
 
 html {
@@ -26,9 +27,10 @@ html {
 
   --color-error: var(--error);
   --color-success: var(--success);
+  --color-whatsapp: var(--whatsapp);
 
   --body-font: var(--font-sora), sans-serif;
-  --heading-font: var(--font-grotesk), sans-serif;
+  --heading-font: var(--font-cinzel), sans-serif;
 }
 
 *,
@@ -42,4 +44,8 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: var(--font-sora), sans-serif;
+}
+
+h1 {
+  font-family: var(--font-cinzel), sans-serif;
 }

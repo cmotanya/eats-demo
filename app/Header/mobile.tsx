@@ -1,13 +1,13 @@
 "use client";
 
 import menuData from "@/data/menu";
-import HamburgerMenu from "./hamburger";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import { socialsData } from "@/data/socials";
 import { cn } from "@/utils/cn";
 import { usePathname } from "next/navigation";
+import HamburgerMenu from "./hamburger";
 
 const MobileMenu = () => {
   const pathname = usePathname();
@@ -17,6 +17,10 @@ const MobileMenu = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -48,6 +52,7 @@ const MobileMenu = () => {
             <Link
               href={item.href ?? ""}
               key={index}
+              onClick={closeMenu}
               className="group cursor-pointer"
             >
               <Fade

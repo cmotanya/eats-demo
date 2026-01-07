@@ -1,10 +1,11 @@
 import "./globals.css";
 import AppToast from "@/components/AppToast";
 import { siteMetaData } from "@/data/metadata";
-import { grotesk, sora } from "@/data/fonts";
-import Header from "./Header/page";
-import Footer from "./Footer/page";
+import { cinzel, sora } from "@/data/fonts";
+import Footer from "./footer/page";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import ChatButton from "@/components/ChatButton";
+import Header from "./header/page";
 
 export const metadata = siteMetaData;
 
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${grotesk.variable} ${sora.variable} flex min-h-screen flex-col antialiased`}
+        className={` ${cinzel.variable} ${sora.variable} flex min-h-screen flex-col antialiased`}
       >
         <AppToast />
         <Header />
@@ -24,6 +25,7 @@ export default function RootLayout({
           {children} <SpeedInsights />
         </main>
         <Footer />
+        <ChatButton />
       </body>
     </html>
   );

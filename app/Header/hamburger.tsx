@@ -46,8 +46,10 @@ const HamburgerMenu = ({
       <div className="relative h-6 w-8">
         <span
           className={cn(
-            "absolute left-0 h-1 w-full transform transition duration-300",
-            isOpen ? "bg-background top-1/2 -rotate-45" : "bg-primary top-0.5",
+            "absolute left-0 h-1 w-2/3 transform transition duration-300",
+            isOpen
+              ? "bg-background top-1/2 w-full -rotate-45"
+              : "bg-primary top-0.5",
             hasScrolled ? "bg-background" : "",
           )}
         ></span>
@@ -60,7 +62,7 @@ const HamburgerMenu = ({
         ></span>
         <span
           className={cn(
-            "absolute right-0 h-1 w-3/4 transform transition duration-300",
+            "absolute right-0 h-1 w-2/3 transform transition duration-300",
             isOpen
               ? "bg-background top-1/2 w-full rotate-45"
               : "bg-primary top-[1.35rem]",
