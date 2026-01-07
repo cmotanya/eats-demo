@@ -2,10 +2,10 @@ import "./globals.css";
 import AppToast from "@/components/AppToast";
 import { siteMetaData } from "@/data/metadata";
 import { cinzel, sora } from "@/data/fonts";
-import Footer from "./footer/page";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ChatButton from "@/components/ChatButton";
-import Header from "./header/page";
+import Header from "./Header/page";
+import Footer from "./Footer/page";
 
 export const metadata = siteMetaData;
 
