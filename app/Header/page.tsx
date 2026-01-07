@@ -32,20 +32,18 @@ const Header = () => {
         isScrolled && "bg-background/95 shadow-md",
       )}
     >
-      <Fade direction="down" duration={200} triggerOnce cascade damping={0.1}>
-        <div className="flex h-full items-center justify-between px-4 py-2 lg:px-8">
-          <span
-            className={cn(
-              dancing_script.className,
-              "mt-3 text-center text-2xl font-bold",
-            )}
-          >
-            EATS DEMO
-          </span>
+      <div className="flex items-center justify-between px-4 py-2 lg:px-8">
+        <span
+          className={cn(
+            dancing_script.className,
+            "mt-3 text-center text-2xl font-bold",
+          )}
+        >
+          EATS DEMO
+        </span>
 
-          <MobileMenu />
-        </div>
-      </Fade>
+        <MobileMenu />
+      </div>
     </header>
   );
 };

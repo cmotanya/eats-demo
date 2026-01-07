@@ -36,11 +36,9 @@ const HamburgerMenu = ({
         "relative z-1010 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full transition-all duration-300",
         hasScrolled && isOpen
           ? "bg-transparent"
-          : hasScrolled
-            ? "bg-primary"
-            : isOpen
-              ? "bg-error"
-              : "bg-transparent",
+          : isOpen
+            ? "bg-error"
+            : "bg-transparent",
       )}
     >
       <div className="relative h-6 w-8">
