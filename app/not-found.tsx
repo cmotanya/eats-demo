@@ -45,7 +45,7 @@ const NotFoundPage = () => {
 
           <Fade direction="right" duration={200} delay={500} triggerOnce>
             <Button
-              onClick={() => router.push("/")}
+              onClick={() => router.back()}
               buttonType="button"
               iconPosition="left"
               icon={<ArrowLeft size={16} />}
